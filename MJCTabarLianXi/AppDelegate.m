@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+#import "MJCUITabBarController.h"
+
+#import "MJCDengLuViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +21,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+//    MJCUITabBarController *mjctab = [[MJCUITabBarController alloc]init];
+//    self.window.rootViewController = mjctab;
+//    [self.window makeKeyAndVisible];
+    
+    MJCDengLuViewController *dvc = [[MJCDengLuViewController alloc]init];
+    self.window.rootViewController = dvc;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
